@@ -1,0 +1,172 @@
+<html>
+<head>
+    <meta charset=UTF-8>
+    <title>Оксана Тюрькина</title>
+
+    <link rel=stylesheet href=frontend/plugins/font-awesome-4.7.0/css/font-awesome.min.css>
+    <link rel="shortcut icon" href="frontend/img/if_microphone_82796.png" />
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+    <div class="image-slider">
+
+        <div class='section'>
+            <div class=background_1>
+                <div class=welcome>
+                    <h1 class=name>Тюрькина Оксана</h1>
+                    <h1 class=profession>певица и ведущая мероприятий</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='biography section'>
+            <div class="background_2">
+                <p class="about">«Музыка воодушевляет весь мир, снабжает душу крыльями, способствует полету воображения; музыка придает жизнь и веселье всему существующему, делает человека счасливым… Ее можно назвать воплощением всего прекрасного и всего возвышенного.» Платон</p>
+            </div>
+        </div>
+
+        <div class='video section'>
+            <div class="background_3">
+                <!--<video controls>-->
+                    <!--<source src="./frontend/video/MVI_9341.mp4" type="video/mp4">-->
+                    <!--<source src="./frontend/video/MVI_9341.MOV" type="video/MOV">-->
+                <!--</video>-->
+                <!--<video controls>-->
+                    <!--<source src="./frontend/video/MVI_9342.mp4" type="video/mp4">-->
+                    <!--<source src="./frontend/video/MVI_9342.MOV" type="video/MOV">-->
+                <!--</video>-->
+            </div>
+        </div>
+
+        <div class='photo section'>
+            <div class="background_4">
+                <div id="links" class="links"></div>
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+                    <div class="slides"></div>
+                    <!--<h3 class="title"></h3>-->
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <!--<a class="close">×</a>-->
+                    <!--<a class="play-pause"></a>-->
+                    <!--<ol class="indicator"></ol>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer section">
+            <div class="background_5">
+                <div class="contacts">
+
+                    <div class="cont_text">Контакты:</div>
+                    <div class="phone">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        +38 (099) 721-70-59
+                    </div>
+                    <div class="e-mail">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                        ksenia44.85@mail.ru
+                    </div>
+
+                    <span class="soc_links">
+                        <a href="https://vk.com/tyura4ka">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100000316415672">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </span>
+
+                </div>
+
+                <form class="feedback" action="https://formspree.io/tamilaahmedovnasinyak@gmail.com" method="post">
+                    <div class="feed_text">Оставьте заявку, <br>и я свяжусь с Вами в ближайшее время</div>
+                    <input type="" name="Имя" class="name_text" placeholder="Ваше имя...">
+                    <input type="number" name="tel" class="num_phone" placeholder="Ваш телефон..." pattern="[0-9]{5,10}">
+                    <input type="submit" id="submit_data" value="Отправить">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div><!--
+--><div class=sidebar>
+    <img class="picture1" src="frontend/img/treble_clef/7.png">
+    <img class="picture2" src="frontend/img/treble_clef/3.png">
+    <img class="picture3" src="frontend/img/treble_clef/3.png">
+    <img class="picture4" src="frontend/img/treble_clef/10.png">
+    <img class="picture5" src="frontend/img/treble_clef/10.png">
+    <img class="picture6" src="frontend/img/treble_clef/10.png">
+
+    <div class=mobile>
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        +38 (099) 721-70-59
+    </div>
+    <div class='hamburger hamburger--emphatic-r'>
+        <div class=hamburger-box>
+            <div class=hamburger-inner></div>
+        </div>
+    </div>
+    <ul id=menu>
+        <li class="menu-mainPage"><a>Главная</a></li>
+        <li class="menu-biogr"><a>Биография</a></li>
+        <li class="menu-video"><a>Видео</a></li>
+        <li class="menu-photo"><a>Фото</a></li>
+        <li class="menu-footer"><a>Контакты</a></li>
+    </ul>
+</div>
+
+
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+    <div class="jp-type-single">
+        <div class="jp-gui jp-interface">
+            <div class="jp-volume-controls">
+                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                <div class="jp-volume-bar">
+                    <div class="jp-volume-bar-value"></div>
+                </div>
+            </div>
+            <div class="jp-controls-holder">
+                <div class="jp-controls">
+                    <button class="jp-play" role="button" tabindex="0">play</button>
+                    <button class="jp-stop" role="button" tabindex="0">stop</button>
+                </div>
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                </div>
+                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                <div class="jp-toggles">
+                    <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                </div>
+            </div>
+        </div>
+        <div class="jp-details">
+            <div class="jp-title" aria-label="title">&nbsp;</div>
+        </div>
+        <div class="jp-no-solution">
+            <span>Update Required</span>
+            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
+</div>
+
+<script src='frontend/scripts/jquery-3.2.1.min.js'></script>
+<script src="frontend/plugins/blueimp-gallery/js/blueimp-gallery.js"></script>
+
+<script src="frontend/plugins/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.js"></script>
+<script src="frontend/plugins/jPlayer-2.9.2/dist/add-on/jplayer.playlist.js"></script>
+
+<script src='public/bundle.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+vendor-prefixes(value)
+  -webkit-user-select value
+  -moz-user-select value
+  -ms-user-select value
+  -o-user-select value
+  user-select value
+
+@font-face
+  font-family majestic
+  src url('../fonts/majestic.ttf')
+
+@font-face
+  font-family galsc
+  src url('../fonts/agfatumc.otf')
+
+@font-face
+  font-family mobile
+  src url('../fonts/pfsquaresanspro-regular.ttf')
+
+dark_color = #292727
+main_color = #fff7b9
+
+html {
+  background-color black
+}
+
+body
+  overflow hidden
+  margin 0
+  vendor-prefixes(none)
+
+.container
+  position absolute
+  width 100%
+  height 100%
+  transition width 0.3s
+
+.welcome
+  position absolute
+  top 50%
+  left 5%
+  transform translateY(-50%)
+  text-align center
+  .name
+    font-family majestic
+    font-size 90px
+    font-weight 500
+    margin 0
+  .profession
+    font-family galsc
+    font-size 30px
+    font-style italic
+    font-weight 500
+    margin 0
+
+
+backrg_img(url_way)
+  width 100%
+  height 100%
+  background-image url_way
+  background-size cover
+  background-position center center
+
+.background_1
+  display inline-block
+  backrg_img(url("../img/background/main.jpg"))
+
+.background_2
+  backrg_img(url("../img/background/biography.jpg"))
+
+.background_3
+  backrg_img(url("../img/background/audio.jpg"))
+
+.background_4
+  backrg_img(none)
+  background-color black
+  position: relative
+
+.background_5
+  backrg_img(url("../img/background/footer.jpg"))
+
+.about {
+  white-space: normal;
+  border: 4px solid #808080;
+  border-radius: 20px;
+  width: 30%;
+  position: relative;
+  top: 20%;
+  left: 60%;
+  font-size: 35px;
+  font-family: majestic;
+  font-weight: bolder;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin 0
+}
+
+.links
+  top 50%
+  position absolute
+  transform translateY(-50%)
+  text-align center
+
+.blueimp-gallery-carousel
+  margin 0
+  padding 0
+  height 90%
+  top 50%
+  transform translateY(-50%)
+
+.img-size
+  height 150px
+  width 150px
+
+.footer
+  position relative
+  color main_color
+  font-family mobile
+  text-align center
+
+.contacts
+  position absolute
+  top 10%
+  left 50%
+  transform translateX(-50%)
+  font-size 25px
+  padding: 120px;
+  background: radial-gradient(rgb(21, 10, 14) 120px, rgba(15, 5, 13, 0.01) 260px, rgba(16, 6, 15, 0.1));
+.phone
+  user-select auto
+.e-mail
+  margin-top 3px
+  user-select auto
+.soc_links
+  line-height 50px
+  font-size 30px
+.cont_text
+  font-size 70px
+  font-family majestic
+  padding-bottom 10px
+
+
+.feedback
+  position absolute
+  top 40%
+  left 50%
+  width 600px
+  transform translateX(-50%)
+  padding: 160px;
+  background: radial-gradient(rgb(21, 10, 14) 210px, rgba(15, 5, 13, 0.01) 430px, rgba(16, 6, 15, 0.1));
+  input
+    display block
+    position relative
+    left 50%
+    transform translateX(-50%)
+    padding 8px
+    margin 2%
+    width 300px
+    border solid 2px rgba(main_color, 1)
+    border-radius 4px
+    background-color dark_color
+    color main_color
+
+.feed_text
+  font-size 40px
+  font-family majestic
+#submit_data
+  width 135px
+  background-color main_color
+  color dark_color
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 3px 6px dark_color
+
+.sidebar
+  position fixed
+  right -270px
+  background-color dark_color
+  color #fff7b9
+  height 100%
+  width 270px
+  font-size 26px
+  font-family galsc
+  box-shadow -20px 0 130px 10px black,
+              0 0 50px #000 inset
+  //box-shadow: 0 0 50px rgba(0, 0, 0, 1) inset;
+  transition right 0.3s
+  ul
+    padding 0
+    position absolute
+    width 100%
+    li:hover
+      cursor pointer
+      background-color #fff7b9
+      color #525252
+      font-size 30px
+      text-shadow 4px 4px 5px #5d5d5d
+      font-weight 600
+      transition background-color 0.8s
+
+li
+  list-style-type none
+  text-shadow 4px 4px 5px #AAAAAA
+  border-bottom solid 2px dimgray
+  height 70px
+  line-height 46px
+  width 270px
+  a
+    display block
+    padding 25px
+    padding-top 15px
+    padding-left 20px
+    width 225px
+    height 30px
+
+a
+  text-decoration none
+  color inherit
+
+.mobile
+  position absolute
+  left -300px
+  font-size 22px
+  top 16px
+  cursor pointer
+  font-family mobile
+  color #2c2c2c
+
+.fa-mobile
+  color #525252
+
+.hamburger
+  position absolute
+  left -78px
+  cursor pointer
+
+.hamburger--emphatic-r .hamburger-inner,
+.hamburger--emphatic-r .hamburger-inner::before,
+.hamburger--emphatic-r .hamburger-inner::after,
+.hamburger--emphatic-r.is-active .hamburger-inner,
+.hamburger--emphatic-r.is-active .hamburger-inner::before,
+.hamburger--emphatic-r.is-active .hamburger-inner::after
+  transition-duration 0.3s
+  transition-delay 0.25s
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+  border-radius 0
+  background-color main_color
+  height 2px
+
+.background_width
+  width calc(100% - 270px)
+  transition all 0.3s
+.sidebar_right
+  right 0
+  transition all 0.3s
+
+pictures(width, left, top)
+  position absolute
+  width width
+  top top
+  left left
+.picture1
+  pictures(270px, 0, 89%)
+.picture2
+  pictures(140px, 0, 89%)
+.picture3
+  pictures(270px, 0, -14%)
+.picture4
+  pictures(80px, 74%, 0)
+.picture5
+  pictures(45px, 0, 15%)
+.picture6
+  pictures(126px, 58%, 28%)
+
+
+video
+  width 500px
+  position relative
+  top 50%
+  left 50%
+  transform translate3D(-50%, -50%, 0)
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
